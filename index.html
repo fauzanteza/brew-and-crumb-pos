@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kasir - Brew & Crumb</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div>
+      <div class="brand">
+        <div class="logo-box">BC</div>
+        <div><strong>Brew & Crumb</strong><br><small style="color:#d6ccc2;">Coffee & Bakery</small></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Kasir</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="transaksi.html">Transaksi</a></li>
+        <li><a href="ringkasan.html">Ringkasan</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-bottom"><a href="pengaturan.html">Pengaturan</a></div>
+  </aside>
+
+  <main class="main-content">
+    <h1>Kasir - Pilih Menu</h1>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Daftar Menu</h3><br>
+        <div class="menu-grid">
+          <div class="menu-item"><h4>Caramel Macchiato</h4><p class="price">Rp 28.000</p><button class="btn" onclick="tambahMenu('Caramel Macchiato')">+ Tambah</button></div>
+          <div class="menu-item"><h4>Americano Iced</h4><p class="price">Rp 20.000</p><button class="btn" onclick="tambahMenu('Americano Iced')">+ Tambah</button></div>
+          <div class="menu-item"><h4>Butter Croissant</h4><p class="price">Rp 22.000</p><button class="btn" onclick="tambahMenu('Butter Croissant')">+ Tambah</button></div>
+          <div class="menu-item"><h4>Cinnamon Roll</h4><p class="price">Rp 25.000</p><button class="btn" onclick="tambahMenu('Cinnamon Roll')">+ Tambah</button></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Pesanan Saat Ini</h3><br>
+        <table>
+          <tr><td>Caramel Macchiato (x1)</td><td>Rp 28.000</td></tr>
+          <tr><td>Butter Croissant (x1)</td><td>Rp 22.000</td></tr>
+          <tr><th>Total</th><th>Rp 50.000</th></tr>
+        </table><br>
+        <button class="btn" style="width:100%" onclick="cetakStruk()">Bayar & Cetak Struk</button>
+      </div>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
