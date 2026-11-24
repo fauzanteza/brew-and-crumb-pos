@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Transaksi - Brew & Crumb</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div>
+      <div class="brand">
+        <div class="logo-box">BC</div>
+        <div><strong>Brew & Crumb</strong><br><small style="color:#d6ccc2;">Coffee & Bakery</small></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Kasir</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="transaksi.html" class="active">Transaksi</a></li>
+        <li><a href="ringkasan.html">Ringkasan</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-bottom"><a href="pengaturan.html">Pengaturan</a></div>
+  </aside>
+
+  <main class="main-content">
+    <h1>Riwayat Transaksi</h1>
+    <div class="card">
+      <table>
+        <thead><tr><th>ID Struk</th><th>Waktu</th><th>Item Dibeli</th><th>Total</th><th>Detail</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>#TRX-001</td><td>10:15 WIB</td><td>Caramel Macchiato (1), Butter Croissant (1)</td><td>Rp 50.000</td>
+            <td><button class="btn" onclick="lihatStruk('#TRX-001', 'Rp 50.000')">Lihat Struk</button></td>
+          </tr>
+          <tr>
+            <td>#TRX-002</td><td>11:02 WIB</td><td>Americano Iced (2)</td><td>Rp 40.000</td>
+            <td><button class="btn" onclick="lihatStruk('#TRX-002', 'Rp 40.000')">Lihat Struk</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
